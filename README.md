@@ -1,6 +1,7 @@
 # ProyectoArquitecturaSoftwareAplicada-Grupo3
 ⦁	Caso N° 2
 La empresa Soporte Patitos S.A, es una empresa que se encarga de brindar servicios de mantenimiento a edificios a nivel nacional, actualmente, se encuentran ubicados en San José, catedral. Poseen una gran cantidad de problemas, ya que no cuentan con un sistema que les permita gestionar al personal. Con base en lo mencionado, se le solicita analizar, planificar y desarrollar un sistema que contemple:
+<br></br>
 ⦁	Sitio web
 ⦁	El sitio web deberá presentar:
 ⦁	Pantalla de bienvenida
@@ -14,6 +15,7 @@ La empresa Soporte Patitos S.A, es una empresa que se encarga de brindar servici
 ⦁	Gerencia
 ⦁	DTI
 ⦁	Financiero
+<br></br>
 ⦁	Perfil para uso del sistema
 ⦁	Gerencia (Acceso a Asistencia, Evaluación del personal)
 ⦁	Recursos Humanos (Acceso a todos los módulos del sistema)
@@ -27,10 +29,12 @@ La empresa Soporte Patitos S.A, es una empresa que se encarga de brindar servici
 ⦁	Depto. TI – Soporte técnico nivel 2 (salario 950.000)
 ⦁	Depto. Financiero – Ventas (salario 890.000)
 ⦁	Depto. Financiero – Contabilidad (salario 700.000)
+<br></br>
 ⦁	 Horario del puesto 
 ⦁	Horario 1 de 8 am – 5 pm
 ⦁	Horario 2 de 9 am – 6 pm
 ⦁	Horario 3 de 10 am – 7 am
+<br></br>
 ⦁	Asistencia
 ⦁	Debe registrar el ingreso del empleado
 ⦁	Formato DD/MM/AAAA HH:MM
@@ -38,6 +42,7 @@ La empresa Soporte Patitos S.A, es una empresa que se encarga de brindar servici
 ⦁	Formato DD/MM/AAAA HH:MM
 ⦁	Debe registrar omisión de marcas (no marca entrada o salida)
 ⦁	Debe registrar ausencias (no marca entrada ni salida)
+<br></br>
 ⦁	Evaluación del personal
 ⦁	Deberá crear 5 preguntas para evaluar el rendimiento (se califica de 1 a 10, siendo 1 el más bajo 10 el más alto)
 ⦁	Cumple con las tareas asignadas
@@ -46,6 +51,7 @@ La empresa Soporte Patitos S.A, es una empresa que se encarga de brindar servici
 ⦁	Posee buena relación con los compañeros
 ⦁	Fomenta el trabajo en equipo
 ⦁	Deberá generar un reporte que se liga al empleado
+<br></br>
 ⦁	Planillas
 ⦁	Se debe de generar la colilla de pago para cada empleado que contemple
 ⦁	Pago de la CCSS
@@ -55,13 +61,13 @@ La empresa Soporte Patitos S.A, es una empresa que se encarga de brindar servici
 ⦁	Salario luego de aplicar los rebajos
 ⦁	Se debe almacenar todas las planillas generadas
 ⦁	Debe exportarse en formato PDF
-⦁	Deben de llegarle a cada empleado su colilla de pago correspondiente.
+⦁	Deben de llegarle a cada empleado su colilla de pago correspondiente
+<br></br>
 Nota: 
+<br></br>
 	El registro de usuarios lo deberá realizar el personal de recursos humanos y la primera vez que se ingresa al sistema, se le debe solicitar al empleado que cambie la contraseña. 
 	Para el ingreso a los módulos de Registro de empleados, Evaluación del Personal y Planillas deben ser ingresado únicamente por los empleados con perfil 
 Asistencia, así como revisión de su historial de colillas de pago.
 
 
-
-Logo de la empresa
  
