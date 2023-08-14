@@ -1,9 +1,82 @@
---root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+:root {
 --bg-black: black;
 --bg-yellow: yellow;
 --bg-white: white;
 --bg-lightblue: lightblue;
 --bg-blue: blue;
 
+
+}
+
+
+
+body {
+  height: 100vh;
+  margin: 0;
+ 
+}
+
+main {
+   background-image: url(./img/imagen-fondo.jpg!d);
+   background-size: cover;
+}
+
+.container-fluid {
+    height: 100vh;
+
+ 
+}
+
+.img-patitos {
+    width: 200px;
+    height: 130px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h2 {
+        text-align: center;
+        
+}
+       
+.login-box {
+    display: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 680px;
+    max-height: 650px;
+    
+  }
+
+  .buttons {
+    justify-content: center;
+    margin: 40px;
+  }
+
+.clave-olvidada {
+    text-align:  center;
+    padding: 20px;
+ 
+}
+
+
+
+footer {
+    height: 40px;
+    background-color: var(--bg-lightblue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 10px;
+    text-align: center;
 
 }

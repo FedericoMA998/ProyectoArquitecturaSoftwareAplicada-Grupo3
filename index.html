@@ -15,6 +15,7 @@
     <!--Css links connection-->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css">
 
     <!--Bootstrap conexion-->
     <link
@@ -24,16 +25,29 @@
       crossorigin="anonymous"
     />
   </head>
+
+
   <body>
-    <!--contenido-->
-    <main>
-      <section class="login-form">
-        <div class="container-fluid main-container">
+ <!--Cabecera-->
+ <header>
+  <nav>
+    <div   class="navbar navbar-expand-lg bg-body-tertiary boder-bottom border-body navbar bg-dark"
+    data-bs-theme="dark">
+        <img class="img-bandera" src="./css/img/costa-rica.png" style="width: 25px; height: 25px;">
+    </div>
+  </nav>
+ </header>
+   <!--contenido-->
+
+    <main class="container-fluid">
+      <section class="login-box">
+        <div class="container-fluid ">
           <div class="d-flex align-items-center justify-content-center vh-100">
             <form
               class="container col-lg-4 col-md-6 col-sm-8 col-10"
               method="POST"
             >
+             <img class="img-patitos" src="./css/img/logo.patito.png">
               <h2 class="mb-4">Iniciar sesión</h2>
               <div class="form-group">
                 <label for="Usuario">Nombre de usuario</label>
@@ -62,25 +76,25 @@
                   name="IniciarSesion"
                 >
                   Iniciar sesión
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  name="Registrarse"
-                >
-                  Registrarse
-                </button>
+              </button>
+              </div>
+              <div class="clave-olvidada">
+                <label for="Contraseña"><a href="./Clave olvidada.html"> Olvido Contraseña?</a></label>
               </div>
             </form>
           </div>
+         
         </div>
       </section>
     </main>
     <!--------Pie de la pagina----->
-    <footer class="pt-4 pt-md-5 border-top">
+    <footer class="pt-6 pt-md-1 border-top">
       <div class="footer">
-        <p>Soporte Patitos S.A 2023</p>
+        <div class="container">
+        <p class="font-footer">Soporte Patitos S.A 2023</p>
       </div>
+    </div>
+    </div>
     </footer>
     <!-- JavaScript -->
     <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
@@ -93,5 +107,6 @@
     ></script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="js/Login.js"></script>
-  </body>
-</html>
+    </body>
+    </html>
+    
