@@ -51,7 +51,7 @@
             > 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./evaluacion.html">Asistencia</a>
+            <a class="nav-link" href="./Asistencia.html">Asistencia</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./evaluacion.html">Evaluacion</a>
@@ -68,50 +68,35 @@
 
 
 <!--contenido-->
-<main class="container-fluid">
-    <section class="asistencia">
-      <div class="card" >
-        <div class="d-flex align-items-center justify-content-center vh-100">
-        <form   class="container col-lg-4 "
-        method="POST">
-      <div class="form-nombre">
-        <h2 class="mb-4">Asistencia</h2>
-        <div class="mb-3">
+  <main class="container">
+    <section class="row justify-content-center">
+      <h2 class="asistencia">Asistencia</h2>
+      <form class="main col-md-6 col-lg-4" action="">
+        <div class=" mb-3">
           <label for="exampleFormControlInput1" class="form-label">Nombre del empleado</label>
-          <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+          <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Enrique">
+
+          <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+          <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Mendez">
         </div>
-       <div class="form-apellido">
+
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-            <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="apellido">
+          <div class="date"></div>
+          <label for="exampleFormControlInput1" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="birth-date">Fecha</label>
+          <input type="date" name="fecha" class="form-control" />
           </div>
         </div>
-          <div class="form-email">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Correo</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
 
-            <div class="form-date">
-                  <div class="mb-3">
-                    <label for="birth-date">Fecha</label>
-                    <input type="date" name="nacimiento" class="form-control" />
-                  </div>
-                </div>
-              </div>
-              
-              <div class="form-horario">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Horario</option>
-                <option value="1">8am-5pm</option>
-                <option value="2">9am-6pm</option>
-                <option value="3">10am-7am</option>
-              </select>
-            </div>
-
-            <div class="form-radio m-4">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <div class="mb-3">
+          <label for="asunto">Horario</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Horario</option>
+            <option value="1">8am-5pm</option>
+            <option value="2">9am-6pm</option>
+            <option value="3">10am-7am</option>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
               <label class="form-check-label" for="flexRadioDefault1">
                 Entrada
               </label>
@@ -121,13 +106,16 @@
               <label class="form-check-label" for="flexRadioDefault2">
                Salida
               </label>
+              <div class="botons m-2">
+                <button
+                type="submit"
+                class="btn btn-primary me-2"
+                name="IniciarSesion"
+              >Enviar
+                </button>
             </div>
-          </div> 
-        </form>
-    </div>
-  </div>
-    </section>
-</main>
+      </form>
+  </main>
 
 <!---Pie-->
 <footer class="pt-6 pt-md-1 border-top">

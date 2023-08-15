@@ -1,9 +1,74 @@
---root {
-    --bg-black: black;
-    --bg-yellow: yellow;
-    --bg-white: white;
-    --bg-lightblue: lightblue;
-    --bg-blue: blue;
-    
-    
-    }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --bg-black: black;
+  --bg-yellow: yellow;
+  --bg-white: white;
+  --bg-lightblue: lightblue;
+  --bg-blue: blue;
+
+
+}
+
+
+#container1 {
+  background-color: #191919;
+}
+
+#colorDiv {
+  background-color: #666666;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+form {
+  display: block;
+}
+
+.form-group label {
+  text-align: center;
+}
+
+#submitBtn {
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.large {
+  width: 100%;
+}
+
+#frgPass {
+  color: #d9d9d9;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #d9d9d9;
+}
+
+.footer {
+  clear: both;
+  border-top: 1px solid --bg-lightblue;  
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 4px;
+  
+}

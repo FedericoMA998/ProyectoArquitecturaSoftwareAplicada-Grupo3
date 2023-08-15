@@ -15,6 +15,7 @@
     <!--Css links connection-->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/Registro.css">
 
     <!--Bootstrap conexion-->
     <link
@@ -55,7 +56,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./evaluacion.html">Asistencia</a>
+                <a class="nav-link" href="./Asistencia.html">Asistencia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./evaluacion.html">Evaluacion</a>
@@ -71,313 +72,67 @@
     </header>
 
     <!--contenido-->
-    <main class="my-4 container text-center">
-      <section class="row justify-content-center">
-        <form class="col-md-6 col-lg-10" action="" method="POST" enctype="multipart/form-data">
-          <div class="row justify-content-center">
-            <h3>Registro de Empleado</h3>
-            <div class="col-md-4">
-              <div class="card mt-3">
-                <div class="card-body">
-                  <img
-                    class="img-div  img-fluid position-left"
-                    src="./css/img/Usuario.png"
-                    alt="Profile Picture"
-                  />
+    <main class="my-3 container">
+      <div class="container" id="container1">
+        <div class="col-md-6 col-md-offset-3" id="colorDiv">
+            <div class="col-md-6 col-md-offset-3" id="innerDiv">
+                <div class="page-header">
+                    <h3>Log in</h3>
                 </div>
-                  <label for="imagen">Selecciona una imagen:</label>
-                  <input type="file" id="imagen" name="imagen" accept="image/*">
-                  <br>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      class="form-control"
-                      placeholder="Ingrese su nombre"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card 2 -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="primer-apellido">Primer Apellido</label>
-                    <input
-                      type="text"
-                      id="PrimerApellido"
-                      name="PrimerApellido"
-                      class="form-control"
-                      placeholder="Ingrese su primer apellido"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card 3 -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="segundo-apellido">Segundo Apellido</label>
-                    <input
-                      type="text"
-                      id="SegundoApellido"
-                      name="SegundoApellido"
-                      class="form-control"
-                      placeholder="Ingrese su segundo apellido"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="identificacion">Identificación</label>
-                    <input
-                      type="text"
-                      id="Identificacion"
-                      name="Identificacion"
-                      class="form-control"
-                      placeholder="Ingrese su ID"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="sexo">Sexo</label>
-                    <select
-                      id="sexo"
-                      name="sexo"
-                      class="form-control"
-                      onchange="seleccionarSexo()"
-                    >
-                      <option value="Femenino">Femenino</option>
-                      <option value="Masculino">Masculino</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="birth-date">Fecha de nacimiento</label>
-                    <input type="date" name="nacimiento" class="form-control" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="hire-day">Fecha de Ingreso</label>
-                  <input type="date" name="hire-day" class="form-control" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-        <div class="col-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="form-group">
-                <label for="departamento">Departamento</label>
-                <select
-                  id="departamento"
-                  name="departamento"
-                  class="form-control"
-                  onchange="seleccionardepartamento()"
-                >
-                  <option value="Femenino">Gerencia</option>
-                  <option value="Masculino">Administrativo</option>
-                  <option value="Masculino">DTI</option>
-                  <option value="Masculino">Financiero</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row justify-content-end">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="form-group">
-                <label for="departamento">Perfil</label>
-                <select
-                  id="Perfil"
-                  name="Perfil"
-                  class="form-control"
-                  onchange="seleccionardepartamento()"
-                >
-                  <option value="Gerencia">Gerencia</option>
-                  <option value="Recursos Humanos">Recursos Humanos</option>
-                  <option value="Empleado">Empleado</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <form>
+                    <div class="form-group">
+                        <label for="userInput">Username or E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordConfirm">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <small><a href="#" id="frgPass">Forgot password?</a></small>
+                    </div>
+                    <div class="form-group" id="smth">
+                        <label for="securityQuestion">Security Question?</label>
+                        <select name="secQuest" id="dropdown">
+                            <option value="0">Where was your mother born?</option>
+                            <option value="1">What was your first car?</option>
+                            <option value="2">What was the first name of your first pet?</option>
+                            <option value="3">What was your school name?</option>
+                            <option value="4">Where were you born?</option>
+                            <option value="5">What model your first smartphone was?</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="secQuestAnswer">Type your security question here</label>
+                        <input type="text" class="form-control" id="security_question" placeholder="Answer here">
+                    </div>
+                </form>
+                <button type="submit" id="submitBtn">Log in</button>
+                <br />
+        </div>    
     </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="form-group">
-                <label for="Categoria Puesto">Categoria</label>
-                <select
-                  id="Categoria"
-                  name="Categoria"
-                  class="form-control"
-                  onchange="seleccionardepartamento()"
-                >
-                  <option value="Administrativo">Administrativo</option>
-                  <option value="Gerencia">Gerencia</option>
-                  <option value="TI">TI</option>
-                  <option value="Financiero">Financiero</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="form-group">
-                <label for="departamento">Puesto</label>
-                <select
-                  id="Perfil"
-                  name="Perfil"
-                  class="form-control"
-                  onchange="seleccionardepartamento()"
-                >
-                  <option value="Gerencia">Secretaria</option>
-                  <option value="Proveduria">Proveduria</option>
-                  <option value="Gerente">Gerente</option>
-                  <option value="Subgente">Subgente</option>
-                  <option value="Soporte Tenico 1">Soporte Tecnico 1</option>
-                  <option value="Soporte Tecnico 2">Soporte Tecnico 2</option>
-                  <option value="Ventas">Ventas</option>
-                  <option value="Contabilidad">Contabilidad</option>
-                </select>
-              </div>
-            </div> 
-          </div>
-
-          <div class="row justify-content-end">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="Categoria Puesto">Salario</label>
-                  <select
-                    id="Salario"
-                    name="Salario"
-                    class="form-control"
-                    onchange="seleccionarsalarioo()"
-                  >
-                    <option value="Salario1">₡450.000</option>
-                    <option value="Salario2">₡500.000</option>
-                    <option value="Salario3">₡2.000000</option>
-                    <option value="Salario4">₡1.750.000</option>
-                    <option value="Salario5">₡750.000</option>
-                    <option value="Salario6">₡950.000</option>
-                    <option value="Salario7">₡890.000</option>
-                    <option value="Salario8">₡700.000</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="Horario">Horario</label>
-                  <select
-                    id="Horario"
-                    name="Categoria"
-                    class="form-control"
-                    onchange="seleccionardepartamento()"
-                  >
-                    <option value="Horario1">Horario 1 (8am-5pm)</option>
-                    <option value="Horario2">Horario 2 (9am-6pm)</option>
-                    <option value="Horario3">Horario 3(10am-7am)</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       
-            <div class="buttons mt-4">
-                <button type="submit" class="btn btn-primary me-2" name="CrearUsuario">
-               Registrar
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  name="Volver"
-                >
-                  Volver
-                </button>
-              </div>
-          </div>
-        </form>
-      </section>
-      <script src="/js/Registro.js"></script>
     </main>
     <!--------Pie de la pagina----->
-    <footer class="pt-4 pt-md-5 border-top">
-      <div class="footer">
-        <p>Soporte Patitos S.A 2023</p>
-      </div>
-    </footer>
-    <!-- JavaScript -->
-    <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
-    <script src="js/Login.js"></script>
-  </body>
-</html>
 
+
+
+ <footer class="pt-6 pt-md-1 border-top">
+  <div class="footer">
+    <div class="container">
+    <p class="font-footer">Soporte Patitos S.A 2023</p>
+  </div>
+</div>
+</div>
+</footer>
+<!-- JavaScript -->
+<script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"
+></script>
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+<script src="js/Login.js"></script>
+</body>
+</html>

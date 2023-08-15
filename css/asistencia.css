@@ -11,11 +11,55 @@
     
 }
 
-*{
-    box-sizing: border-box;
+body {
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+   background-image: url("./img/imagen-fondo.jpg!d");
+   background-size: cover;
+}
+   
+
+
+
+main {
+    height: 700px;
+
 }
 
 
+.row.justify-content-center {
+    max-width: 550px;
+    min-width: 400px;
+    margin: 100px;
+    justify-content: center;
+    border: 1px solid white;
+    box-shadow: 5px 1px 1px white;
+    clear: both;
+    background-color: var(--bg-white);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+form{
+   margin: 20px;
+   display: inline-block;
+}
+
+.asistencia {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+.botons m-2 {
+    position: center;
+    align-content: center;
+    margin: 30px;
+    
+}
 
 
 .font-footer {
@@ -23,11 +67,14 @@
     font-size: bold;
 }
 
+
 footer {
-    height: 40px;
+    clear: both;
     background-color: var(--bg-lightblue);
     font-family: 'Roboto', sans-serif;
-    
     text-align: center;
+    padding: 5px;
 
+    
 }
+  
