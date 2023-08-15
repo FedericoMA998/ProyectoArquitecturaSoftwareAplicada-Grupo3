@@ -18,9 +18,9 @@
 
     <!--Bootstrap conexion-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
   </head>
@@ -55,7 +55,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./evaluacion.html">Asistencia</a>
+                <a class="nav-link" href="./Asistencia.html">Evaluacion</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./evaluacion.html">Evaluacion</a>
@@ -72,17 +72,50 @@
 
     <!--contenido-->
     <main>
-      <section></section>
+      <section class="container">
+        <div class="justify-content-center text-center mb-3">
+          <label for="nombreEmpleado" class="input-group-text">Nombre</label>
+          <input type="text" class="form-control" id="NomUserPlanilla">
+          <button class="btn btn-primary" id="btnCrearPlanilla">Crear Planilla</button>
+        </div>
+      </section>
+      <section class="container">
+        <table class="table">
+          <thead class="thead">
+            <tr>
+              <th scope="col">Pago CCSS</th>
+              <th scope="col">Exoneraciones</th>
+              <th scope="col">Deducciones</th>
+              <th scope="col">Salario Bruto</th>
+              <th scope="col">Salario Neto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="pagoCCSS"></td>
+              <td id="exoneraciones"></td>
+              <td id="deducciones"></td>
+              <td id="salarioBruto"></td>
+              <td id="salarioNeto"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="justify-content-center text-center">
+        <div class="container">
+          <button class="btn btn-primary" id="generarPDF">Generar PDF</button>
+          <button class="btn btn-primary" id="enciarEmail">Enviar Email</button>
+        </div>
+      </section>
+      
     </main>
 
     <!--Pie-->
-    <footer class="pt-6 pt-md-1 border-top">
+
+    <footer class="pt-4 pt-md-5 border-top">
       <div class="footer">
-        <div class="container">
-        <p class="font-footer">Soporte Patitos S.A 2023</p>
+        <p>Soporte Patitos S.A 2023</p>
       </div>
-    </div>
-    </div>
     </footer>
     <!-- JavaScript -->
     <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
@@ -95,6 +128,6 @@
     ></script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="js/Login.js"></script>
-    </body>
-    </html>
-    
+  </body>
+</html>
+
