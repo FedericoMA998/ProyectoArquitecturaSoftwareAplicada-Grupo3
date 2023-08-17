@@ -3,8 +3,8 @@
 
 
 :root {
---bg-black: black;
---bg-yellow: yellow;
+--bg-black: #1e211e;
+--bg-yellow: #ebae34;
 --bg-white: white;
 --bg-lightblue: lightblue;
 --bg-blue: blue;
@@ -12,12 +12,14 @@
 
 }
 
+	html, bod
 	html, body {
 		height: 100%;
 	}
 	body {
 		font-family: 'Roboto', sans-serif;
-	background-image: url("./img/imagen-fondo.jpg!d");
+	
+		background-image: radial-gradient(circle,  #1e211e 0%, #ebae34 100%);
 	}
 	.demo-container {
 		height: 100%;
@@ -31,6 +33,7 @@
 		font-weight: 700;
 		letter-spacing: 1px;
 		text-transform: uppercase;
+		
 	}
 
 

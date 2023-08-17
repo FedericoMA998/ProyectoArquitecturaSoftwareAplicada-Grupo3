@@ -1,25 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
 
 :root {
-    --bg-black: black;
-    --bg-yellow: yellow;
+    --bg-black: #1e211e;
+    --bg-yellow: #ebae34;
     --bg-white: white;
     --bg-lightblue: lightblue;
     --bg-blue: blue;
-    
-    
+  
+  
+  }
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+
 }
 
-body {
-   margin: 0;
-   font-family: 'Roboto', sans-serif;
-   background-image: url("./img/imagen-fondo.jpg!d");
-   background-size: cover;
-}
-   
 
-
+html, bod
+	html, body {
+		height: 100%;
+	}
+	body {
+	
+		background-image: radial-gradient(circle,  #1e211e 0%, #ebae34 100%);
+	}
 
 main {
     height: 700px;
@@ -27,54 +40,34 @@ main {
 }
 
 
-.row.justify-content-center {
-    max-width: 550px;
-    min-width: 400px;
-    margin: 100px;
-    justify-content: center;
-    border: 1px solid white;
-    box-shadow: 5px 1px 1px white;
-    clear: both;
-    background-color: var(--bg-white);
-    font-family: 'Roboto', sans-serif;
+.nav-dark .nav-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
-
-form{
-   margin: 20px;
-   display: inline-block;
+.nav-dark .nav-link:hover {
+ background-color:  #ebae34; 
 }
 
-.asistencia {
-    text-align: center;
-    padding: 20px;
-}
-
-
-
-
-
-.botons m-2 {
-    position: center;
-    align-content: center;
-    margin: 30px;
-    
-}
 
 
 .font-footer {
-    color: var(--bg-black);
-    font-size: bold;
+    font-style: bold;
+    color: var(--bg-white);
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
-
 
 footer {
     clear: both;
-    background-color: var(--bg-lightblue);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 5px;
-
-    
-}
+    padding: 3px;
+    background-color: var(--bg-black);
+    position: relative;
+    bottom: 0;
+    width: 100%;
   
+
+}

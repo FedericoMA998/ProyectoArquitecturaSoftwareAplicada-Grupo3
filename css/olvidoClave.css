@@ -3,22 +3,36 @@
 
 
 :root {
---bg-black: #1e211e;
---bg-yellow: yellow;
---bg-white: white;
---bg-lightblue: lightblue;
---bg-blue: blue;
-
-
-}
+	--bg-black: #1e211e;
+	--bg-yellow: #ebae34;
+	--bg-white: white;
+	--bg-lightblue: lightblue;
+	--bg-blue: blue;
+	
+	
+	}
 
 	html, body {
 		height: 100%;
 	}
 	body {
 		font-family: 'Roboto', sans-serif;
-	background-image: url("./img/imagen-fondo.jpg!d");
+		background-image: radial-gradient(circle,  #1e211e 0%, #ebae34 100%);
 	}
+
+
+	.nav-dark .nav-link a {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+	
+	.nav-dark .nav-link:hover {
+	 background-color:  #ebae34; 
+	}
+	
+	
 	.demo-container {
 		height: 100%;
 		display: flex;
@@ -33,9 +47,9 @@
 		text-transform: uppercase;
 	}
 
-    rounded {
+    .rounded {
         border-radius: var(--bs-border-radius)!important;
-        margin: 400px;
+        margin: 275px;
         width: 300px;
     }
     
@@ -51,8 +65,9 @@
 	
 
     .font-footer {
-        color: var(--bg-white);
-        font-size: bold;
+        font-style: bold;
+		color: var(--bg-white);
+        font-size: 15px;
         text-align: center;
         font-family: 'Roboto', sans-serif;
     }
@@ -61,7 +76,7 @@
         clear: both;
         padding: 1px;
         background-color: var(--bg-black);
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
       

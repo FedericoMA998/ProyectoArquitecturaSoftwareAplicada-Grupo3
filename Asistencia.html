@@ -23,98 +23,110 @@
     
 <!--cabecera-->
 <header>
-    <nav
-    class="navbar navbar-expand-lg bg-body-tertiary boder-bottom border-body navbar bg-dark"
-    data-bs-theme="dark"
-  >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Patitos S.A</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="./Registro.html"
-              >Registro</a
-            > 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Asistencia.html">Asistencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./evaluacion.html">Evaluacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Planillas.html">Planilla</a>
-          </li>
-        </ul>
-        <span class="navbar-text"> </span>
-      </div>
+  <nav
+  class="navbar navbar-expand-lg bg-body-tertiary boder-bottom border-body navbar bg-dark"
+  data-bs-theme="dark"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Patitos S.A</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="navbar-dark">
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="./Registro.html"
+            >Registro</a
+          > 
+        </li>
+        <li class="navbar-dark">
+          <a class="nav-link" href="./Asistencia.html">Asistencia</a>
+        </li>
+        <li class="nav-dark">
+          <a class="nav-link" href="./evaluacion.html">Evaluacion</a>
+        </li>
+        <li class="navbar-dark">
+          <a class="nav-link" href="./Planillas.html">Planilla</a>
+        </li>
+      </ul>
+      <span class="navbar-text"> </span>
     </div>
-  </nav>
+  </div>
+</nav>
 </header>
 
 
 <!--contenido-->
   <main class="container">
-    <section class="row justify-content-center">
-      <h2 class="asistencia">Asistencia</h2>
       <form class="main col-md-6 col-lg-4" action="">
-        <div class=" mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre del empleado</label>
-          <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Enrique">
+        <h2 class="asistencia">Asistencia</h2>
+        <div class="panel panel-default">
+          <div class="row">
+            <div class="col-md-12">
+              <input type="nombre" class="form-control"  placeholder="Nombre Completo">
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <input type="iD" class="form-control" placeholder="ID">
+          </div>
+           <div class="col-md-12">
+            <span class="help-block text-muted small-font" ></span>
+            <input type="text" class="form-control" placeholder="email" />
+           </div>
+           <div class="row ">
+            <div class="col-md-12 pad-adjust">
 
-          <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-          <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Mendez">
+              <input type="date" name="fecha" class="form-control" placeholder="date" />
+            </div>
         </div>
-
-          <div class="mb-3">
-          <div class="date"></div>
-          <label for="exampleFormControlInput1" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          <label for="birth-date">Fecha</label>
-          <input type="date" name="fecha" class="form-control" />
+        <div class="row">
+          <div class="col-md-12 pad-adjust">
+              <div class="combobox">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Horario</option>
+                  <option value="1">8am-5pm</option>
+                  <option value="2">9am-6pm</option>
+                  <option value="3">10am-7am</option>
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12 pad-adjust">
+            <div class="checkbox">
+            <label>
+              <input type="checkbox" checked class="text-muted">Entrada
+            </label>
           </div>
         </div>
-
-        <div class="mb-3">
-          <label for="asunto">Horario</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Horario</option>
-            <option value="1">8am-5pm</option>
-            <option value="2">9am-6pm</option>
-            <option value="3">10am-7am</option>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Entrada
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-               Salida
-              </label>
-              <div class="botons m-2">
-                <button
-                type="submit"
-                class="btn btn-primary me-2"
-                name="IniciarSesion"
-              >Enviar
-                </button>
-            </div>
-      </form>
+        <div class="col-md-12 pad-adjust">
+          <div class="checkbox">
+          <label>
+            <input type="checkbox" checked class="text-muted">Salida
+          </label>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+             <input type="submit"  class="btn btn-danger" value="CANCEL" />
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+              <input type="submit"  class="btn btn-warning btn-block" value="Enviar" />
+          </div>
+      </div>
+ 
+               </div>
+          </div>
+</form>
   </main>
 
 <!---Pie-->
