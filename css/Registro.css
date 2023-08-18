@@ -1,9 +1,116 @@
---root {
-    --bg-black: black;
-    --bg-yellow: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
+
+:root {
+    --bg-black: #1e211e;
+    --bg-yellow: #ebae34;
     --bg-white: white;
     --bg-lightblue: lightblue;
     --bg-blue: blue;
-    
-    
-    }
+
+
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+html, bod
+	html, body {
+		height: 100%;
+	}
+	body {
+
+		background-image: radial-gradient(circle,  #1e211e 0%, #ebae34 100%);
+	}
+
+main {
+    height: 700px;
+
+}
+
+
+.nav-dark .nav-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nav-dark .nav-link:hover {
+ background-color:  #ebae34;
+}
+
+
+/* Contenido */
+main {
+  height: 100vh;
+  padding: 10px;
+}
+.demo-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+  width: 2000px;
+  height: 685px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: inset 5em 1em #fff;
+
+}
+
+.registro {
+  text-align: center;
+  padding: 20px;
+}
+
+::placeholder {
+font-size:14px;
+letter-spacing:0.5px;
+}
+.form-control {
+  font-size: 16px;
+  padding: 25px 20px;
+  border: #ebae34;
+
+  }
+
+.btn btn-warning {
+
+  justify-content: flex-end;
+  padding: 12px 26px;
+  align-items: center;
+}
+
+
+
+/*footer */
+footer {
+  clear: both;
+  padding: 3px;
+  background-color: var(--bg-black);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-style: bold;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
