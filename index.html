@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
+  <head>
+    <meta charset="UTF-8" />
+
     <title>Soporte Patitos S.A</title>
-    <meta name="description" content="Pagina principal de cineapp">
-    <meta name="keywords" content="cartelera, cine, movies , Costa Rica cineapp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal de cineapp" />
+    <meta
+      name="keywords"
+      content="cartelera, cine, movies , Costa Rica cineapp"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Favicon.ico in the root directory-->
+    <link rel="shortcut icon" href="./css/img/iconono.jpeg">
     <!--Css links connection-->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  
-  <!--Bootstrap conexion-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-   
-</head>
-<body>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css">
+
+    <!--Bootstrap conexion-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+
+
+  <body>
+ <!--Cabecera-->
+ <header>
+  <nav>
+    <div   class="navbar navbar-expand-lg bg-body-tertiary boder-bottom border-body navbar bg-dark"
+    data-bs-theme="dark">
+        <img class="img-bandera" src="./css/img/costa-rica.png" style="width: 25px; height: 25px;">
+    </div>
+  </nav>
+ </header>
+   <!--contenido-->
+
+    <main class="container-fluid">
+      <section class="login-box">
+        <div class="container-fluid ">
+          <div class="d-flex align-items-center justify-content-center vh-100">
+            <form
+              class="container col-lg-4 col-md-6 col-sm-8 col-10"
+              method="POST"
+            >
+             <img class="img-patitos" src="./css/img/logo.patito.png">
+              <h2 class="mb-4">Iniciar sesión</h2>
+              <div class="form-group">
+                <label for="Usuario">Nombre de usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Usuario"
+                  name="Usuario"
+                  placeholder="Ingrese su nombre de usuario"
+                />
+              </div>
+              <div class="form-group mt-3">
+                <label for="Contraseña">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Contraseña"
+                  name="Contraseña"
+                  placeholder="Ingrese su contraseña"
+                />
+              </div>
+              <div class="buttons mt-4">
+                <button
+                  type="submit"
+                  class="btn btn-primary me-2"
+                  name="IniciarSesion"
+                >
+                  Iniciar sesión
+              </button>
+              </div>
+              <div class="clave-olvidada">
+                <label for="Contraseña"><a href="./Clave olvidada.html"> Olvido Contraseña?</a></label>
+              </div>
+            </form>
+          </div>
+         
+        </div>
+      </section>
+    </main>
+    <!--------Pie de la pagina----->
+    <footer class="pt-6 pt-md-1 border-top">
+      <div class="footer">
+        <div class="container">
+        <p class="font-footer">Soporte Patitos S.A 2023</p>
+      </div>
+    </div>
+    </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="js/Login.js"></script>
+    </body>
+    </html>
     
-
-
-    
-<!--cabecera-->
-<header>
-    
-</header>
-
-
-<!--contenido-->
-<main>
-    <section>
-
-
-    </section>
-</main>
-
-
-
-
-
-<!--Pie-->
-
-<footer>
-
-</footer>
-
-
-<!--archivos js-->
-
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-</body>
-</html>

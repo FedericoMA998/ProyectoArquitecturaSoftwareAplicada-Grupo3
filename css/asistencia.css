@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --bg-black: black;
+    --bg-yellow: yellow;
+    --bg-white: white;
+    --bg-lightblue: lightblue;
+    --bg-blue: blue;
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+.font-footer {
+    color: var(--bg-black);
+    font-size: bold;
+}
+
+footer {
+    height: 40px;
+    background-color: var(--bg-lightblue);
+    font-family: 'Roboto', sans-serif;
+    
+    text-align: center;
+
+}

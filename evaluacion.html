@@ -12,15 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Favicon.ico in the root directory-->
+    <link rel="shortcut icon" href="./css/img/iconono.jpeg">
     <!--Css links connection-->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <!--Bootstrap conexion-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
   </head>
@@ -55,8 +56,12 @@
                 >
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="./Asistencia.html">Asistencia</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./evaluacion.html">Evaluacion</a>
               </li>
+             
               <li class="nav-item">
                 <a class="nav-link" href="./Planillas.html">Planilla</a>
               </li>
@@ -68,158 +73,152 @@
     </header>
 
     <!--contenido-->
-    <main>
-      <section></section>
-      <br>
-      <div class="container"> <!-- Barra de busqueda de empleados -->
-        <div class="input-group mb-3">
-          <label for="nombreEmpleado" class="input-group-text">Nombre</label>
-          <input type="text" class="form-control">
-          <button class="btn btn-primary">Buscar</button>
+
+    <main class="container-fluid ">
+      <section class="evaluacion" style="margin: 2%;"> <!-- Seccion de busqueda-->
+        <div class="card">
+          <div class="nombre justify-content-center text-center" style="display: flex;">
+            <div class="mb-3" style="display: flex; margin-top: 1%;">
+              <label for="exampleFormControlInput1" class="form-label" style="margin-top: 2%;">Nombre</label>
+              <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="nombre" style="margin-inline: 3%;">
+              <button type="button" class="btn btn-primary">Registrar</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="justify-content-center text-center">
-        <span>Conteste a las preguntas marcando un valor entre el 1 y el 10 donde 1 es la nota más baja y el 10 es la nota más alta</span>
-      </div>
-      <div class="container col-sm-10">
-        <div class="justify-content-center text-center"> <!--Pregunta 1-->
-          <label for="pregunta1">1. Cumple con las tareas asignadas</label>
+      </section>
+
+
+       <section class="container-fluid"> <!-- Seccion de preguntas-->
+        <div class="form">
+          <div class="card"> <!-- Tarjeta para la pregunta 1-->
+            <div  class="evaluacion-1 justify-content-center text-center">
+              <label for="exampleFormControlInput" class="form-label">1.Cumple con las tareas asigmadas</label>
+              <div class="justify-content-center text-center" style="display: flex;">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    SI
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card"> <!-- Tarjeta para la pregunta 2-->
+            <div  class="evaluacion-2 justify-content-center text-center">
+              <label for="exampleFormControlInput" class="form-label">2.No posee Ausencias?</label>
+              <div class="justify-content-center text-center" style="display: flex;">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    SI
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card"> <!-- Tarjeta para la pregunta 3-->
+            <div  class="evaluacion-3 justify-content-center text-center">
+              <label for="exampleFormControlInput" class="form-label">3.Posee 1 o mas llegadas tardias?</label>
+              <div class="justify-content-center text-center" style="display: flex;">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    SI
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card"> <!-- Tarjeta para la pregunta 4-->
+            <div  class="evaluacion-4 justify-content-center text-center">
+              <label for="exampleFormControlInput" class="form-label">4.Posee buena relacion con los compañero?</label>
+              <div class="justify-content-center text-center" style="display: flex;">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    SI
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card"> <!-- Tarjeta para la pregunta 5-->
+            <div  class="evaluacion-5 justify-content-center text-center">
+              <label for="exampleFormControlInput" class="form-label">5.Fomenta el trabajo en equipo?</label>
+              <div class="justify-content-center text-center" style="display: flex;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      SI
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      NO
+                    </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buton justify-content-center text-center" style="margin: 1%;"> <!-- Div para el boton de guardar-->
+            <button type="button" class="btn btn-primary" id="btnGuardaEval">Guardar</button>
+          </div>
         </div>
-        <div class="form-check justify-content-center text-center"> <!--Respuestas de la pregunta 2-->
-          <input type="radio" name="radiosPreguntas" id="pregunta1.1" value="1">
-          <span class="form-check-label">1</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.2" value="2">
-          <span class="form-check-label">2</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.3" value="3">
-          <span class="form-check-label">3</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.4" value="4">
-          <span class="form-check-label">4</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.5" value="5">
-          <span class="form-check-label">5</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.6" value="6">
-          <span class="form-check-label">6</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.7" value="7">
-          <span class="form-check-label">7</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.8" value="8">
-          <span class="form-check-label">8</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.9" value="9">
-          <span class="form-check-label">9</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta1.10" value="10">
-          <span" class="form-check-label">10</span>
-        </div>
-        <div class="justify-content-center text-center">  <!--Pregunta 2-->
-          <label for="pregunta2">2. No posee ausencias</label>
-        </div>
-        <div class="form-check justify-content-center text-center"> <!--Respuestas de la pregunta 2-->
-          <input type="radio" name="radiosPreguntas" id="pregunta2.1" value="1">
-          <span class="form-check-label">1</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.2" value="2">
-          <span class="form-check-label">2</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.3" value="3">
-          <span class="form-check-label">3</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.4" value="4">
-          <span class="form-check-label">4</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.5" value="5">
-          <span class="form-check-label">5</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.6" value="6">
-          <span class="form-check-label">6</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.7" value="7">
-          <span class="form-check-label">7</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.8" value="8">
-          <span class="form-check-label">8</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.9" value="9">
-          <span class="form-check-label">9</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta2.10" value="10">
-          <span" class="form-check-label">10</span>
-        </div>
-        <div class="justify-content-center text-center">
-          <label for="pregunta3">3. Posee 1 o más llegadas tardías</label>
-        </div>
-        <div class="form-check justify-content-center text-center"> <!--Respuestas de la pregunta 3-->
-          <input type="radio" name="radiosPreguntas" id="pregunta3.1" value="1">
-          <span class="form-check-label">1</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.2" value="2">
-          <span class="form-check-label">2</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.3" value="3">
-          <span class="form-check-label">3</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.4" value="4">
-          <span class="form-check-label">4</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.5" value="5">
-          <span class="form-check-label">5</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.6" value="6">
-          <span class="form-check-label">6</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.7" value="7">
-          <span class="form-check-label">7</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.8" value="8">
-          <span class="form-check-label">8</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.9" value="9">
-          <span class="form-check-label">9</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta3.10" value="10">
-          <span" class="form-check-label">10</span>
-        </div>
-        <div class="justify-content-center text-center">
-          <label for="pregunta4">4. Posee buena relacion con los compañeros</label>
-        </div>
-        <div class="form-check justify-content-center text-center"> <!--Respuestas de la pregunta 4-->
-          <input type="radio" name="radiosPreguntas" id="pregunta4.1" value="1">
-          <span class="form-check-label">1</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.2" value="2">
-          <span class="form-check-label">2</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.3" value="3">
-          <span class="form-check-label">3</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.4" value="4">
-          <span class="form-check-label">4</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.5" value="5">
-          <span class="form-check-label">5</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.6" value="6">
-          <span class="form-check-label">6</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.7" value="7">
-          <span class="form-check-label">7</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.8" value="8">
-          <span class="form-check-label">8</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.9" value="9">
-          <span class="form-check-label">9</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta4.10" value="10">
-          <span" class="form-check-label">10</span>
-        </div>
-        <div class="justify-content-center text-center">
-          <label for="pregunta5">5. Fomenta el trabajo en equipo</label>
-        </div>
-        <div class="form-check justify-content-center text-center"> <!--Respuestas de la pregunta 5-->
-          <input type="radio" name="radiosPreguntas" id="pregunta5.1" value="1">
-          <span class="form-check-label">1</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.2" value="2">
-          <span class="form-check-label">2</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.3" value="3">
-          <span class="form-check-label">3</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.4" value="4">
-          <span class="form-check-label">4</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.5" value="5">
-          <span class="form-check-label">5</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.6" value="6">
-          <span class="form-check-label">6</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.7" value="7">
-          <span class="form-check-label">7</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.8" value="8">
-          <span class="form-check-label">8</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.9" value="9">
-          <span class="form-check-label">9</span>
-          <input type="radio" name="radiosPreguntas" id="pregunta5.10" value="10">
-          <span" class="form-check-label">10</span>
-        </div>
-      </div>
+       </section>
     </main>
 
-    <!--Pie-->
-
-    <footer></footer>
-
-    <!--archivos js-->
-
+    <!---Pie-->
+ 
+    <footer class="pt-xl-3 pt-md-2 border-top">
+      <div class="footer" style="margin: 1%;">
+        <div class="container justify-content-center text-center"  style="display: flex;">
+          <p style="margin-top: 4%;">Soporte Patitos S.A 2023</p>
+          <img src="./css/img/iconono.jpeg" alt="Logo Soporte Patitos S.A" style="width: 20%; margin-inline: 2%;">
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-  </body>
-</html>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="js/Login.js"></script>
+    </body>
+    </html>
+    
+    
