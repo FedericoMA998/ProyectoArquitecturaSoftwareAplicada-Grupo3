@@ -3,27 +3,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 
-:root {
-  --bg-black: #1e211e;
-  --bg-yellow: #ebae34;
-  --bg-white: white;
-  --bg-lightblue: lightblue;
-  --bg-blue: blue;
 
+
+:root {
+    --bg-black: #1e211e;
+    --bg-yellow: #ebae34;
+    --bg-white: white;
+    --bg-lightblue: lightblue;
+    --bg-blue: blue;
+  
+  
+  }
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 
 }
+
 
 html, bod
 	html, body {
 		height: 100%;
 	}
 	body {
-		font-family: 'Roboto', sans-serif;
+	
 		background-image: radial-gradient(circle,  #1e211e 0%, #ebae34 100%);
 	}
 
+main {
+    height: 700px;
 
-  .nav-dark .nav-link a {
+}
+
+
+.nav-dark .nav-link a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -35,71 +52,66 @@ html, bod
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#container1 {
-  background-color: #191919;
+/* Contenido */
+main {
+  height: 100vh;
+  padding: 10px;
 }
-
-#colorDiv {
-  background-color: #666666;
-  height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 15px;
+.demo-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
-  display: block;
-}
-
-.form-group label {
-  text-align: center;
-}
-
-#submitBtn {
-  margin: auto;
-  display: block;
-  border-radius: 20px;
-  width: 100px;
-}
-
-.large {
-  width: 100%;
-}
-
-#frgPass {
-  color: #d9d9d9;
-}
-
-.page-header {
-  text-align: center;
-}
-
-.footer {
-  text-align: center;
-}
-
-.footer a {
-  color: #d9d9d9;
-}
-
-.footer {
-  clear: both;
-  border-top: 1px solid --bg-lightblue;  
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 4px;
+  width: 2000px;
+  height: 685px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: inset 5em 1em #fff;
   
+}
+
+.registro {
+  text-align: center;
+  padding: 20px;
+}
+
+::placeholder {
+font-size:14px;
+letter-spacing:0.5px;
+}
+.form-control {
+  font-size: 16px;
+  padding: 25px 20px;
+  border: #ebae34;
+
+  }
+
+.btn btn-warning {
+
+  justify-content: flex-end;
+  padding: 12px 26px;
+  align-items: center;
+}
+
+
+
+/*footer */
+footer {
+  clear: both;
+  padding: 3px;
+  background-color: var(--bg-black);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-style: bold;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
 }

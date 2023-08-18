@@ -34,3 +34,23 @@ html, bod
 .nav-dark .nav-link:hover {
  background-color:  #ebae34; 
 }
+
+
+.font-footer {
+    font-style: bold;
+    color: var(--bg-white);
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    clear: both;
+    padding: 3px;
+    background-color: var(--bg-black);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  
+
+}

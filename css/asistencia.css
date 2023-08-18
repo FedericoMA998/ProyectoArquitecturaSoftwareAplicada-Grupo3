@@ -52,6 +52,55 @@ main {
 }
 
 
+/* Contenido */
+
+.demo-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    max-width: 700px;
+    height: 485px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: inset 5em 1em #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.asistencia {
+    text-align: center;
+    padding: 15px;
+}
+
+::placeholder {
+	font-size:14px;
+	letter-spacing:0.5px;
+	}
+	.form-control {
+		font-size: 16px;
+		padding: 25px 20px;
+
+    }
+
+    .checkbox {
+        padding: 5px;
+    }
+
+ .btn btn-warning {
+   
+    justify-content: flex-end;
+    padding: 12px 26px;
+    align-items: center;
+}
+
+
+/*footer */
 
 .font-footer {
     font-style: bold;
