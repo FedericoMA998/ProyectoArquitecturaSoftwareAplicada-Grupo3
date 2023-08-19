@@ -1,6 +1,7 @@
 <?php
 //incluyendo la libreria
 require "adodb5/adodb.inc.php";
+//conexion a la base de datos
 function conectar()
 {
   $USUARIO = "root";
@@ -11,11 +12,11 @@ function conectar()
   //crear el objeto e conexión
   $con = newADOConnection($DRIVER);
   //habilitar el debug
-  $con->debug = true;
+  //$con->debug = true;
   //crear la conexión a la bd
   $con->connect($HOST, $USUARIO, $CLAVE, $BD);
   return $con;
-  echo $con->isConnected();
+  //echo $con->isConnected();
 }
 
 function insertar($tabla, $fila)
