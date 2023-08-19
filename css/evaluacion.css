@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
 
 :root {
@@ -35,15 +36,22 @@ body {
 }
 
 
-
-
-.nav-dark .nav-link a {
-  color: #fff;
+.nav-link   {
+  font-family: 'Roboto', sans-serif;
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  letter-spacing: 1px;
-}
+  
+  
+  }
 
-.nav-dark .nav-link:hover {
-background-color:  #ebae34; 
+
+li:hover {
+background-color:  #ebae34;
+border-radius: 5px;
+text-transform: 2seg;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
 
 :root {
 	--bg-black: #1e211e;
@@ -21,24 +21,17 @@
 	}
 
 
-	
-	.nav-link   {
-		font-family: 'Roboto', sans-serif;
-		color: white;
+	.nav-dark .nav-link a {
+		color: #fff;
 		text-decoration: none;
 		font-weight: 500;
-		
-		
-		}
-	li:hover {
-	 background-color:  #ebae34;
-	 border-radius: 5px;
-	 text-transform: 2seg;
-	 -webkit-border-radius: 5px;
-	 -moz-border-radius: 5px;
-	 -ms-border-radius: 5px;
-	 -o-border-radius: 5px;
+		letter-spacing: 1px;
 	}
+	
+	.nav-dark .nav-link:hover {
+	 background-color:  #ebae34; 
+	}
+	
 	
 	.demo-container {
 		height: 100%;
@@ -52,8 +45,11 @@
 		font-weight: 700;
 		letter-spacing: 1px;
 		text-transform: uppercase;
+        color: black;
 	}
-
+    a {
+        color: black;
+    }
     .rounded {
         border-radius: var(--bs-border-radius)!important;
         margin: 275px;
