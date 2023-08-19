@@ -74,17 +74,22 @@ main {
 
 form {
   width: 2000px;
-  height: 685px;
+  height: 693px;
   border: 1px solid #fff;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 45px;
   box-shadow: inset 5em 1em #fff;
-
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
 }
+
 
 .registro {
   text-align: center;
   padding: 20px;
+  font-size: 25px;
 }
 
 ::placeholder {
@@ -108,6 +113,17 @@ letter-spacing:0.5px;
 
 
 /*footer */
+
+/*footer */
+
+.font-footer {
+  font-style: bold;
+  color: var(--bg-white);
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
 footer {
   clear: both;
   padding: 3px;
@@ -115,11 +131,6 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  color: #fff;
-  font-style: bold;
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+
 
 }
