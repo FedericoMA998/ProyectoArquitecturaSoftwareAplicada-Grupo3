@@ -64,26 +64,26 @@
     <form class="main col-md-6 col-lg-4 " action="Asistencia">
       <h2 class="asistencia">Asistencia</h2>
       <div class="panel panel-default">
-        <div class="col-md-10 m-3">
+        <div class="col-md-10 m-3 justify-content-center">
 
           <div class="col-md-12 pad-adjust">
             <input type="empleado" class="form-control" placeholder="Empleado">
           </div>
         </div>
-        <div class="col-md-10 m-3">
+        <div class="col-md-10 m-3 pad-adjust">
           <input type="iD" class="form-control" placeholder="ID">
         </div>
-        <div class="col-md-10 m-3">
+        <div class="col-md-10 m-3 pad-adjust">
           <span class="help-block text-muted small-font"></span>
           <input type="text" class="form-control" placeholder="email" />
         </div>
-        <div class="col-md-10 m-3">
+        <div class="col-md-10 m-3 pad-adjust">
           <div class="col-md-12 pad-adjust">
 
             <input type="date" name="fecha" class="form-control" placeholder="date" />
           </div>
         </div>
-        <div class="col-md-10 m-3">
+        <div class="col-md-10 m-3 pad-adjust">
           <div class="col-md-12 pad-adjust">
             <div class="combobox">
               <select class="form-select" aria-label="Horario">
@@ -95,26 +95,29 @@
               </select>
             </div>
           </div>
+          <div class="col-md-12 pad-adjust pad-adjust">
+            <div class="checkbox">
+              <label>
+                <input class="form-check-input" type="radio"  name="flexRadioDefault" id="flexRadioDefault1>
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Entrada
+                </label>
+              </label>
           <div class="col-md-12 pad-adjust">
             <div class="checkbox">
               <label>
-                <input type="checkbox" checked class="text-muted">Entrada
-              </label>
-            </div>
-          </div>
-          <div class="col-md-12 pad-adjust">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" checked class="text-muted">Salida
-              </label>
+                <input class="form-check-input"   type="radio"  name="flexRadioDefault" id="flexRadioDefault2>
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Salida
+                </label>
             </div>
           </div>
           <div class="row m-4">
-            <div class="col-md-6 col-sm-5 col-xs-6 pad-adjust ">
-              <input type="submit" class="btn btn-danger" value="CANCEL" />
+            <div class="col-md-6 col-sm-5 col-xs-6 pad-adjust">
+              <button  class="btn btn-danger"><a href="./btnRegistrado.html" style="color: white; text-decoration: none;">Cancel</a></button>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust mb-1">
-              <input type="submit" class="btn btn-warning btn-block" value="Enviar" />
+              <button class="btn btn-warning btn-block"><a href="./btnRegistrado.html" style="color: white; text-decoration: none;">Enviar</a></button>
             </div>
           </div>
         </div>
